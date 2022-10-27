@@ -1,0 +1,24 @@
+{
+  "name": "cryptozombies-2022-fall2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx hardhat test",
+    "deploy": "npx hardhat run scripts/deploy.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tnguyen42/cryptozombies-2022-fall2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tnguyen42/cryptozombies-2022-fall2/issues"
+  },
+  "homepage": "https://github.com/tnguyen42/cryptozombies-2022-fall2#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "hardhat": "^2.12.0"
+  }
+}
