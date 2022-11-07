@@ -57,4 +57,8 @@ contract ZombieFactory {
     uint256 randDna = _generateRandomDna(_name);
     _createZombie(_name, randDna);
   }
+
+  function getAllZombies() public view returns (Zombie[] memory) {
+    return zombies;
+  }
 }
