@@ -1,7 +1,9 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity >=0.8.0 <0.9.0;
 
-contract ZombieFactory {
+import "@openzeppelin/contracts/access/Ownable.sol";
+
+contract ZombieFactory is Ownable {
   event NewZombie(uint256 zombieId, string name, uint256 dna);
 
   uint256 dnaDigits = 16;
@@ -22,7 +24,7 @@ contract ZombieFactory {
    * @param _name The name of the zombie
    * @param _dna The DNA of the zombie
    */
-  function _createZombie(string memory _name, uint256 _dna) private {
+  function _createZombie(string memory _name, uint256 _dna) internal {
     zombies.push(Zombie(_name, _dna));
     uint256 id = zombies.length - 1;
 
